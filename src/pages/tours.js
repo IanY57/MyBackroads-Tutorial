@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 const tours = () => {
   return (
     <Layout>
-      <h1>Hello from the Tours Staff</h1>
+      <h4>Hello from the Tours Staff</h4>
     </Layout>
   )
 }

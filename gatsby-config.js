@@ -5,5 +5,26 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-styled-components`],
+  siteMetadata: {
+    title: "BackRoads",
+    description:
+      "Explore awesome worldwide tours.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatum obcaecati ex?",
+    author: "@johndoe",
+    data: {
+      name: "John",
+      age: "24",
+    },
+  },
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+  ],
 }
