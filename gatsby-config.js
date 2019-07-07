@@ -8,10 +8,9 @@ module.exports = {
     description:
       "Explore awesome worldwide tours.Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatum obcaecati ex?",
     author: "@johndoe",
-    data: {
-      name: "John",
-      age: "24",
-    },
+    twitterUsername: "@ians3dp",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://focused-wilson-d2d0fc.netlify.com",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -19,6 +18,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
